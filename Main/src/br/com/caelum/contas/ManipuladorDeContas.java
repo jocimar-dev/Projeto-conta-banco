@@ -44,8 +44,8 @@ public class ManipuladorDeContas {
 
     public void salvaDados(Evento evento){
         List<Conta> contas = evento.getLista("listaContas");
-        RepositorioDeContas repositorio = new RepositorioDeContas();
+        RepositorioDeContas repository = new RepositorioDeContas();
 
-        repositorio.salva(contas);
+        repository.salva(contas);
     }
 }
