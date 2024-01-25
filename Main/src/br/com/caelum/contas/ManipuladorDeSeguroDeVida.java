@@ -4,12 +4,12 @@ import br.com.caelum.contas.modelo.SeguroDeVida;
 import br.com.caelum.javafx.api.util.Evento;
 
 public class ManipuladorDeSeguroDeVida {
-    private SeguroDeVida seguroDeVida;
+    private SeguroDeVida seguroVida;
 
     public void criaSeguro(Evento evento) {
-        this.seguroDeVida = new SeguroDeVida();
-        this.seguroDeVida.setNumeroApolice(evento.getInt("numeroApolice"));
-        this.seguroDeVida.setTitular(evento.getString("titular"));
-        this.seguroDeVida.setValor(evento.getDouble("valor"));
+        this.seguroVida = new SeguroDeVida();
+        this.seguroVida.setNumeroApolice(evento.getInt("numeroApolice"));
+        this.seguroVida.setTitular(evento.getString("titular"));
+        this.seguroVida.setValor(evento.getDouble("valor"));
     }
 }
